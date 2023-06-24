@@ -12,50 +12,46 @@ jobs:
         version: ["2.12", "dev"]
 
     container:
-      image:  google/dart:${{ matrix.version }}
+      image: google/dart:${{ matrix.version }}
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1
       - name: Install dependencies
-        run: pub get
+        run: dart pub get
       - name: Run tests
-        run: pub run test
+        run: dart run test
 
   test-windows:
     timeout-minutes: 5
     runs-on: windows-latest
 
     steps:
-      - name: Install dart
-        run: |
-          choco install dart-sdk
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1
       - name: Install dependencies
-        run: C:\tools\dart-sdk\bin\pub.bat get
+        run: dart pub get
       - name: Run tests
-        run: C:\tools\dart-sdk\bin\pub.bat run test
+        run: dart test
 
   test-macos:
     timeout-minutes: 5
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Tap Google's Dart formula repository
-        run: brew tap dart-lang/dart
-      - name: Install the Dart formula
-        run: brew install dart
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1
       - name: Install dependencies
-        run: pub get
+        run: dart pub get
       - name: Run tests
-        run: pub run test
+        run: dart test
 
   format:
     timeout-minutes: 5
     runs-on: ubuntu-latest
 
     container:
-      image:  google/dart:dev
+      image: google/dart:dev
 
     steps:
       - uses: actions/checkout@v1
