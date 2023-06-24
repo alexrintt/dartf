@@ -29,24 +29,6 @@ linter:
     # http://dart-lang.github.io/linter/lints/always_declare_return_types.html
     - always_declare_return_types
 
-    # Single line `if`s are fine as recommended in Effective Dart "DO format your code using dartfmt"
-    #
-    # http://dart-lang.github.io/linter/lints/always_put_control_body_on_new_line.html
-    # - always_put_control_body_on_new_line
-
-    # Flutter widgets always put a Key as first optional parameter which breaks this rule.
-    # Also violates other orderings like matching the class fields or alphabetically.
-    #
-    # http://dart-lang.github.io/linter/lints/always_declare_return_types.html
-    # - always_put_required_named_parameters_first
-
-    # All non nullable named parameters should be and annotated with @required.
-    # This allows API consumers to get warnings via lint rather than a crash a runtime.
-    # Might become obsolete with Non-Nullable types
-    #
-    # http://dart-lang.github.io/linter/lints/always_require_non_null_named_parameters.html
-    - always_require_non_null_named_parameters
-
     # Always use package: imports.
     # While both, relative and package imports are fine, package imports are preferred because they allow for easy find
     # and replace
@@ -227,11 +209,6 @@ linter:
     #
     # https://dart-lang.github.io/linter/lints/avoid_returning_null.html
     # - avoid_returning_null
-
-    # Don't use `Future?`, therefore never return null instead of a Future.
-    # Will become obsolete one Non-Nullable types land
-    # https://dart-lang.github.io/linter/lints/avoid_returning_null_for_future.html
-    - avoid_returning_null_for_future
 
     # Use empty returns, don't show off with your knowledge about dart internals.
     # https://dart-lang.github.io/linter/lints/avoid_returning_null_for_void.html
