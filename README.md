@@ -1,6 +1,4 @@
-<img src="https://raw.githubusercontent.com/leisim/dartf/master/.github/logo.svg?sanitize=true" width="500px">
-
-[![Dart CI](https://github.com/leisim/dartf/workflows/Dart%20CI/badge.svg?branch=master)](https://github.com/leisim/dartf/actions) [![Codecov](https://img.shields.io/codecov/c/github/leisim/dartf.svg)](https://codecov.io/gh/leisim/dartf) [![dartf](https://img.shields.io/pub/v/dartf?label=dartf)](https://pub.dev/packages/dartf) [![flutterx](https://img.shields.io/pub/v/flutterx?label=flutterx)](https://pub.dev/packages/flutterx)
+[![Dart CI](https://github.com/alexrintt/dartf/workflows/Dart%20CI/badge.svg?branch=master)](https://github.com/alexrintt/dartf/actions) [![Codecov](https://img.shields.io/codecov/c/github/alexrintt/dartf.svg)](https://codecov.io/gh/alexrintt/dartf) [![dartf](https://img.shields.io/pub/v/dartf?label=dartf)](https://pub.dev/packages/dartf)
 
 _If you miss an extension, please open an issue or pull request_
 
@@ -8,7 +6,7 @@ _If you miss an extension, please open an issue or pull request_
 
 - [Documentation](https://pub.dev/documentation/dartf/latest/dartf/dartf-library.html)
 - [Pub Package](https://pub.dev/packages/dartf)
-- [GitHub Repository](https://github.com/leisim/dartf)
+- [GitHub Repository](https://github.com/alexrintt/dartf)
 
 On this page you can find some of the extensions. Take a look at the docs to see all of them.
 
