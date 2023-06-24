@@ -9,11 +9,8 @@ jobs:
   coverage:
     runs-on: ubuntu-latest
 
-    container:
-      image: google/dart:2.12
-
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
       - name: Install dependencies
         run: dart pub get

@@ -10,13 +10,6 @@ jobs:
     timeout-minutes: 5
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        version: ["2.12", "dev"]
-
-    container:
-      image: google/dart:${{ matrix.version }}
-
     steps:
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1
@@ -52,9 +45,6 @@ jobs:
   analyzer:
     timeout-minutes: 5
     runs-on: ubuntu-latest
-
-    container:
-      image: google/dart:dev
 
     steps:
       - uses: actions/checkout@v3
