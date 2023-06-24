@@ -1,4 +1,4 @@
-[![Dart CI](https://github.com/alexrintt/dartf/workflows/Dart%20CI/badge.svg?branch=master)](https://github.com/alexrintt/dartf/actions) [![Codecov](https://img.shields.io/codecov/c/github/alexrintt/dartf.svg)](https://codecov.io/gh/alexrintt/dartf) [![dartf](https://img.shields.io/pub/v/dartf?label=dartf)](https://pub.dev/packages/dartf)
+[![Pub Dev Dartf](https://img.shields.io/pub/v/dartf?label=pub.dev/dartf)](https://pub.dev/packages/dartf) [![Dart CI](https://github.com/alexrintt/dartf/actions/workflows/dartf.yml/badge.svg)](https://github.com/alexrintt/dartf/actions/workflows/dartf.yml)
 
 _If you miss an extension, please open an issue or pull request_
 
