@@ -10,7 +10,7 @@ _If you miss an extension, please open an issue or pull request_
 
 On this page you can find some of the extensions. Take a look at the docs to see all of them.
 
-## Getting started 🎉
+## Getting started
 
 Add the following to your `pubspec.yaml`:
 
