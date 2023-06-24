@@ -26,3 +26,4 @@ part 'src/num.dart';
 part 'src/range.dart';
 part 'src/sorted_list.dart';
 part 'src/string.dart';
+part 'src/stream.dart';
