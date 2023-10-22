@@ -280,7 +280,7 @@ void main() {
       final List<BigInt> bigintList = [
         BigInt.from(3),
         BigInt.from(1),
-        BigInt.from(2)
+        BigInt.from(2),
       ];
       expect(bigintList.min(), BigInt.from(1));
       expect(bigintList.max(), BigInt.from(3));
@@ -547,12 +547,12 @@ void main() {
         [
           [1],
           [2],
-          [3]
+          [3],
         ].onEach((it) => it.add(it.first)),
         [
           [1, 1],
           [2, 2],
-          [3, 3]
+          [3, 3],
         ],
       );
     });
@@ -602,7 +602,7 @@ void main() {
         expect(
           [1].chunkWhile((a, b) => fail('Should not call predicate')),
           [
-            [1]
+            [1],
           ],
         );
       });
@@ -627,7 +627,7 @@ void main() {
           [2],
           [3],
           [4],
-          [5]
+          [5],
         ]);
       });
 
@@ -636,7 +636,7 @@ void main() {
         expect(result, [
           [0, 1, 2, 3],
           [1, 2, 3, 4],
-          [2, 3, 4, 5]
+          [2, 3, 4, 5],
         ]);
       });
 
@@ -648,7 +648,7 @@ void main() {
           [2, 3, 4, 5],
           [3, 4, 5],
           [4, 5],
-          [5]
+          [5],
         ]);
       });
 
@@ -656,7 +656,7 @@ void main() {
         final result = [0, 1, 2, 3, 4, 5].windowed(3, step: 2);
         expect(result, [
           [0, 1, 2],
-          [2, 3, 4]
+          [2, 3, 4],
         ]);
       });
 
@@ -666,7 +666,7 @@ void main() {
         expect(result, [
           [0, 1, 2],
           [2, 3, 4],
-          [4, 5]
+          [4, 5],
         ]);
       });
     });
@@ -932,7 +932,7 @@ void main() {
         equals({
           'o': ['foo', 'bop'],
           'a': ['bar', 'baz'],
-          'u': ['qux']
+          'u': ['qux'],
         }),
       );
     });
@@ -941,7 +941,7 @@ void main() {
       expect([].partition((it) => false), <List<int>>[[], []]);
       expect([1, 2, 3, 4, 5, 6].partition((it) => it.isOdd), [
         [1, 3, 5],
-        [2, 4, 6]
+        [2, 4, 6],
       ]);
     });
 

@@ -1277,7 +1277,7 @@ class _CachedIterable<T> extends IterableBase<T> {
   Iterator<T> get iterator => _CachedIterator<T>(_cache, _uncomputedIterator);
 }
 
-class _CachedIterator<T> extends Iterator<T> {
+class _CachedIterator<T> implements Iterator<T> {
   _CachedIterator(_IterableCache<T> cache, this._uncomputedIterator)
       // ignore: prefer_initializing_formals
       : _cache = cache,

@@ -43,3 +43,13 @@ extension StreamAlso<T> on Stream<T> {
     });
   }
 }
+
+extension StreamMerge<T> on Iterable<Stream<T>> {
+  Stream<T> merge() {
+    return StreamGroup.merge<T>(this);
+  }
+
+  Stream<T> mergeBroadcast() {
+    return StreamGroup.mergeBroadcast<T>(this);
+  }
+}

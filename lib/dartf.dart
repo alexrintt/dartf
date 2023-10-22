@@ -1,11 +1,13 @@
 /// Superpowers for Dart. Collection of useful static extension methods.
 library dartf;
 
+import 'dart:async';
 import 'dart:collection';
 import 'dart:convert';
 import 'dart:math';
 import 'dart:typed_data';
 
+import 'package:async/async.dart';
 import 'package:characters/characters.dart' as characters;
 import 'package:collection/collection.dart' as collection;
 import 'package:crypto/crypto.dart' as crypto;

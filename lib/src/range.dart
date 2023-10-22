@@ -127,7 +127,7 @@ class DoubleRange extends Range<double> {
 /// as [Range] for [int]
 // ignore: avoid_implementing_value_types
 class IntRange extends IntProgression implements Range<int> {
-  IntRange(int first, int endInclusive) : super(first, endInclusive);
+  IntRange(super.first, super.endInclusive);
 
   @override
   bool contains(covariant num value) {
@@ -223,7 +223,7 @@ int _mod(int a, int b) {
   return mod >= 0 ? mod : mod + b;
 }
 
-class _IntRangeIterator extends Iterator<int> {
+class _IntRangeIterator implements Iterator<int> {
   _IntRangeIterator(this.first, this.last, this.step);
 
   final int first;
